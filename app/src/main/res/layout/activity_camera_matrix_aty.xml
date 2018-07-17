@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.view.CameraMatrixAty">
+
+    <com.zaozao.hu.widgets.Custom3DView
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="250px">
+
+        <ImageView
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:background="@mipmap/aa" />
+
+        <ImageView
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:background="@mipmap/bb" />
+
+        <ImageView
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:background="@mipmap/cc" />
+
+
+    </com.zaozao.hu.widgets.Custom3DView>
+</RelativeLayout>

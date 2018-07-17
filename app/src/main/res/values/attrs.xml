@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundTextView">
+        <attr name="android:text" />
+        <attr name="android:textSize" />
+        <attr name="bgStrokeColor" format="color" />
+        <attr name="bgSolidColor" format="color" />
+        <attr name="bgRadius" format="dimension" />
+        <attr name="bgStrokeWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayoutContainer">
+        <attr name="horizontal_padding" format="dimension" />
+        <attr name="vertical_padding" format="dimension" />
+    </declare-styleable>
+</resources>

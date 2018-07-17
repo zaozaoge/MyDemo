@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'Android开发笔记'
+            keyPassword 'wsj23190058@'
+            storeFile file('E:/zaozao.jks')
+            storePassword 'wsj23190058@'
+        }
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.zaozao.hu"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        flavorDimensions "release"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            minifyEnabled true //是否进行混淆
+            zipAlignEnabled true //是否进行zipAlign优化
+            shrinkResources true //移除无用的资源文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+        yingyongbao {
+            dimension "release"
+        }
+        xiaomi {
+            dimension "release"
+        }
+    }
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:$var.appcompat"
+    implementation "com.android.support:design:$var.design"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "com.android.support:recyclerview-v7:$var.recyclerview"
+    implementation "com.umeng.sdk:common:$var.umengCommon"
+    implementation "com.umeng.sdk:analytics:$var.umengAnalytics"
+    implementation "com.squareup.okhttp3:logging-interceptor:$var.loggingInterceptor"
+    implementation "com.squareup.okhttp3:okhttp:$var.okhttp"
+    implementation "com.squareup.retrofit2:retrofit:$var.retrofit"
+    implementation "com.google.code.gson:gson:$var.gson"
+    implementation "com.squareup.retrofit2:converter-gson:$var.converterGson"
+    implementation "com.squareup.retrofit2:adapter-rxjava:$var.adapterRxjava"
+    implementation "io.reactivex:rxandroid:$var.rxandroid"
+    implementation "io.reactivex:rxjava:$var.rxjava"
+    implementation "com.squareup.retrofit2:converter-scalars:$var.converterScalars"
+}

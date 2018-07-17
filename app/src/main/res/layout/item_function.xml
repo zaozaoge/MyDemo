@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="handler"
+            type="com.zaozao.hu.module.viewModel.MyHandler" />
+
+        <variable
+            name="functionItem"
+            type="com.zaozao.hu.module.model.FunctionItem" />
+    </data>
+
+    <TextView
+        android:id="@+id/function_name"
+        style="@style/FunctionItemTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{view -> handler.onClick(view,functionItem)}"
+        android:text="@{functionItem.itemTitle}" />
+</layout>

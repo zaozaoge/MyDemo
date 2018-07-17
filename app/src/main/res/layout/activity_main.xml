@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.view.MainActivity">
+
+    <com.zaozao.hu.widgets.FlowLayoutContainer
+        android:id="@+id/flowContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.zaozao.hu.widgets.RoundTextView
+            android:id="@+id/custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="位移动画"
+            android:textSize="25sp"
+            android:transitionName="@string/app_name"
+            app:bgStrokeColor="@color/colorAccent"
+            app:bgStrokeWidth="3dp" />
+
+        <com.zaozao.hu.widgets.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="旋转动画"
+            android:textSize="25sp"
+            app:bgStrokeColor="@color/colorAccent"
+            app:bgStrokeWidth="3dp" />
+
+        <com.zaozao.hu.widgets.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="缩放动画"
+            android:textSize="25sp"
+            app:bgStrokeColor="@color/colorAccent"
+            app:bgStrokeWidth="3dp" />
+
+        <com.zaozao.hu.widgets.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="透明度改变动画"
+            android:textSize="25sp"
+            app:bgStrokeColor="@color/colorAccent"
+            app:bgStrokeWidth="3dp" />
+
+        <com.zaozao.hu.widgets.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="动画集合"
+            android:textSize="25sp"
+            app:bgStrokeColor="@color/colorAccent"
+            app:bgStrokeWidth="3dp" />
+
+        <com.zaozao.hu.widgets.RoundTextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="自定义动画"
+            android:textSize="25sp"
+            app:bgStrokeColor="@color/colorAccent"
+            app:bgStrokeWidth="3dp" />
+
+        <com.zaozao.hu.widgets.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="属性平移动画"
+            android:textSize="25sp"
+            app:bgStrokeColor="@color/colorAccent"
+            app:bgStrokeWidth="3dp" />
+
+        <com.zaozao.hu.widgets.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="同时执行多个属性动画"
+            android:textSize="25sp"
+            app:bgStrokeColor="@color/colorAccent"
+            app:bgStrokeWidth="3dp" />
+
+        <com.zaozao.hu.widgets.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="单共享元素转场动画"
+            android:textSize="25sp"
+            app:bgStrokeColor="@color/colorAccent"
+            app:bgStrokeWidth="3dp" />
+
+        <com.zaozao.hu.widgets.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="动画"
+            android:textSize="25sp"
+            app:bgStrokeColor="@color/colorAccent"
+            app:bgStrokeWidth="3dp" />
+
+        <com.zaozao.hu.widgets.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="多元素共享转场"
+            android:textSize="25sp"
+            app:bgStrokeColor="@color/colorAccent"
+            app:bgStrokeWidth="3dp" />
+
+        <com.zaozao.hu.widgets.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="Camera与Matrix实现3D效果"
+            android:textSize="25sp"
+            app:bgStrokeColor="@color/colorAccent"
+            app:bgStrokeWidth="3dp" />
+    </com.zaozao.hu.widgets.FlowLayoutContainer>
+
+
+</LinearLayout>

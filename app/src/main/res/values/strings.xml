@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ZDemo</string>
+    <string name="app_text">appText</string>
+    <string name="producer">制作人:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t枣枣</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="webView">webView</string>
+</resources>
